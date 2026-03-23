@@ -4,7 +4,7 @@ Stacja pogodowa APRS przy wykorzystaniu urządzenia  Hydrawise Garni 2055 ARCUS
 
 EDIT - 2026-03-23 
 ->  Aktualizacja opisu i testy by SP3SWJ
-->  sSprawdzony plik INO  i procedura poniżej.
+->  sprawdzony plik INO  i procedura poniżej.
 
 
 
