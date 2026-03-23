@@ -7,6 +7,8 @@ W załączeniu dwa pliki
 
 <img width="290" height="92" alt="image" src="https://github.com/user-attachments/assets/e52e1e94-925a-47f8-b237-16ac57f0c717" />
 
+https://github.com/sp3swj/APRS-WX-station-Garni-2055/blob/main/Garni_WRO_VSS_SWJ_public_2026-03-23.zip
+
 Otwieramy PDF  i po kolei...
 
 
