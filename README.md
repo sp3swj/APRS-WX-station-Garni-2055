@@ -1,7 +1,98 @@
 Stacja pogodowa APRS przy wykorzystaniu urządzenia  Hydrawise Garni 2055 ARCUS
 
-![ba902190f1ad4248ac2cc03eb01fbc54](https://github.com/user-attachments/assets/81e40a49-57ca-4203-8acc-2eecd520e0b7)
+EDIT - 2026-03-23
+Aktualizacja i testy by SP3SWJ
 
+W załączeniu dwa pliki
+
+<img width="290" height="92" alt="image" src="https://github.com/user-attachments/assets/e52e1e94-925a-47f8-b237-16ac57f0c717" />
+
+Otwieramy PDF  i po kolei...
+
+
+to po kolei....
+
+Zainstalowałęm najnowsze Arduino IDE
+Pobrałem wszsytkie biblioteki 
+doinstalowałem obsługę ESP8266 teks poniżej wklejamy do "preferencji" w Arduino
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+<img width="1001" height="540" alt="image" src="https://github.com/user-attachments/assets/313fd2fb-53a4-4fef-bee8-d884d418c06e" />
+
+
+opis w załączonym pliku PDF - historia z obrazkami
+
+Wszystko działa z najnowszymi bibliotekami - nic nie kombinujemy z plikami CFG w źrółach
+po prostu skłądamy poprawnie i kompilujemy
+
+
+otwieramy załączony plik INO   Garni_WRO_VSS_SWJ_public.ino
+
+uzupełniamy dane logowania do domowej sieci WiFi  
+wpisujemy znak i  hasło APRS-IS  
+
+włączamy zasilanie GARNI
+
+Okablowujemy płytkę
+
+Zasilanie oczywiście z pinów  GND  oraz  3,3V !!
+
+<img width="305" height="427" alt="image" src="https://github.com/user-attachments/assets/1e727104-adae-4db6-b75a-f822361ebb04" />
+
+
+
+<img width="237" height="463" alt="image" src="https://github.com/user-attachments/assets/9584b04d-9d8d-4f8e-9cbb-c9d99ae55a23" />
+
+
+<img width="533" height="360" alt="image" src="https://github.com/user-attachments/assets/dc5f4e1c-35df-44b7-8a05-59085a06ce16" />
+
+<img width="475" height="468" alt="image" src="https://github.com/user-attachments/assets/552fffe7-d69f-4d0e-8527-e24974cdf965" />
+
+
+podłączamy USB do komputera
+
+wybieramy poprawny COM  w arduino 
+wybieramy  płytkę  ESP8266  =>  NodeMCU 1.0 ESP-12E  ESP8266
+
+Kompilujemy  ....  kilka minut 
+
+podłączamy Arduino Port Monitor do naszego COM - 115200
+
+podglądamy w oknie TXT czy połączyło się wszystko
+ widzimy adres IP - jak zalogowało się do WIFI
+
+ <img width="842" height="400" alt="image" src="https://github.com/user-attachments/assets/e9bcf40b-546e-4486-9b4e-47dd88138e5b" />
+
+
+wchodzimy na  WWW z przeglądarki
+
+<img width="912" height="507" alt="image" src="https://github.com/user-attachments/assets/1677d181-c627-4ecb-8ecb-abe4ace3a959" />
+
+
+Czekamy 15 minut - aż pojawi się na  aprs.fi
+
+
+https://aprs.fi/#!z=11&call=a%2FSP3SWJ-13
+
+<img width="349" height="241" alt="image" src="https://github.com/user-attachments/assets/13ddbc15-566d-487e-bac7-c65bf9b26ace" />
+
+ 
+
+Pozdrawiam - SP3SWJ
+
+/ Dzieki VSS i WRO za pomoc :-)
+
+
+
+
+
+
+poniżej oryginalna zawartośc  by  SP3VSS  and SP3WRO
+=========================
+
+Stacja pogodowa APRS przy wykorzystaniu urządzenia  Hydrawise Garni 2055 ARCUS
+
+![ba902190f1ad4248ac2cc03eb01fbc54](https://github.com/user-attachments/assets/81e40a49-57ca-4203-8acc-2eecd520e0b7)
 
 
 POWINNO DZIAŁAĆ Z KAŻDĄ STACJĄ POGOdOWĄ WYKORZYSTUJĄCĄ PROTOKÓŁ "Bresser Weather Sensor"
@@ -30,7 +121,7 @@ Program w wesji z stroną www:
 ![rodosWX](https://github.com/user-attachments/assets/97ae1456-0034-4ebc-8b1f-3960a0087f15)
 
 
-Opis autora:
+Opis autora SP3WRO:
 
 RodosWX_2 - jedyny słuszny program dla stacji pogodowych garni/bresser wysyłający ramki do aprs-is. Testowany na ludziach po spożyciu i przed spożyciem dużych dawek alkoholu.
 
